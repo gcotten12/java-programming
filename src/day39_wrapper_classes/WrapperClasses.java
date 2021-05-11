@@ -47,6 +47,9 @@ public class WrapperClasses {
         Boolean bo1 = new Boolean(true);
         Boolean bo2 = false;
 
+        i2 = 100;
+        System.out.println(i1.equals(i2));
+
 
 
     }
