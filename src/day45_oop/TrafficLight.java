@@ -8,8 +8,12 @@ public class TrafficLight {
     }
 
     public void changeColor(String newColor) {
-        System.out.println("changing color to " + newColor);
-        color = newColor;
+        if (newColor.equalsIgnoreCase("green") || newColor.equalsIgnoreCase("yellow")
+                || newColor.equalsIgnoreCase("red")) {
+            color = newColor;
+        } else {
+            System.out.println("not valid color");
+        }
 
     }
 
