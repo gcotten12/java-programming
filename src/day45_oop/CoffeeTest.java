@@ -14,5 +14,12 @@ public class CoffeeTest {
         System.out.println("type of coffee = " + myCoffee.getType());
         System.out.println(myCoffee.toString());
 
+        Coffee coffee1 = new Coffee();
+        coffee1.setType("latte");
+        System.out.println("coffee1 type = " + coffee1.getType());
+
+        Coffee coffee2 = coffee1; // coffee2 will go to the stack but nothing will be added
+                                  // to the heap because that object is already there
+
     }
 }
