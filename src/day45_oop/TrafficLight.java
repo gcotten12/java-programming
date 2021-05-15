@@ -12,7 +12,8 @@ public class TrafficLight {
                 || newColor.equalsIgnoreCase("red")) {
             color = newColor;
         } else {
-            System.out.println("not valid color");
+            System.out.println("ERROR: Not Valid Color : " + newColor);
+            color = null;
         }
 
     }
