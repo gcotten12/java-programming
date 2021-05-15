@@ -10,6 +10,9 @@ public class CoffeeTest {
         System.out.println("amount = " + myCoffee.getAmount());
         myCoffee.drinkSome(50);
         System.out.println("amount = " + myCoffee.getAmount());
+        myCoffee.setType("mocha frape");
+        System.out.println("type of coffee = " + myCoffee.getType());
+        System.out.println(myCoffee.toString());
 
     }
 }
