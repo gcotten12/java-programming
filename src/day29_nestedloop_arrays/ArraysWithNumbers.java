@@ -1,5 +1,7 @@
 package day29_nestedloop_arrays;
 
+import java.util.Scanner;
+
 public class ArraysWithNumbers {
     public static void main(String[] args) {
         int[] nums = new int[2];
@@ -16,5 +18,6 @@ public class ArraysWithNumbers {
 
         //declare String array cities and assign 4 city names
         String[] cities = {"Dallas", "Austin", "Houston", "San Antonio"};
+
     }
 }
