@@ -31,8 +31,8 @@ public class AnimalSpecies {
     public String toString() {
         return "AnimalSpecies{" +
                 "name='" + name + '\'' +
-                ", population=" + population +
-                ", growthRate=" + growthRate +
+                ", population=" + population + " million" +
+                ", growthRate=" + growthRate + "%" +
                 '}';
     }
 }
