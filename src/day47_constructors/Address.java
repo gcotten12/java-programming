@@ -35,7 +35,7 @@ public class Address {
         return zipcode;
     }
 
-    public void setZipcode(int country) {
+    public void setZipcode(int zipcode) {
         this.zipcode = zipcode;
     }
 
