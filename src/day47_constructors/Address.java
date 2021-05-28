@@ -7,6 +7,19 @@ public class Address {
     private int zipcode;
     private String country = "USA";
 
+    // constructor with no arguement
+    public Address() {
+
+    }
+
+    public Address(String street, String city, String state, int zipcode) {
+        this.zipcode = zipcode;
+        this.street = street;
+        this.state = state;
+        this.city = city;
+
+    }
+
     public String getStreet() {
         return street;
     }

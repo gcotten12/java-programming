@@ -10,6 +10,9 @@ public class AddressList {
         home.setState("Tx");
         home.setZipcode(75032);
         System.out.println(home);
+        
+        Address oldHome = new Address("2333 Elkride Dr", "Mesquite", "Tx", 75181);
+        System.out.println("oldHome = " + oldHome);
 
     }
 
