@@ -5,11 +5,10 @@ import java.util.List;
 
 public class Group {
     private String name;
-    private List<String> members = new ArrayList<>();
+    private List<String> members;
 
     public Group(String name) {
         this.name = name;
-        newMember(name);
     }
 
     public void newMember(String newMember) {
