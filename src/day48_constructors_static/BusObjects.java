@@ -8,6 +8,7 @@ public class BusObjects {
         bus.driver = new Driver("Murodil");
         bus.engine = new Engine(10);
         System.out.println(bus);
+        System.out.println(bus.driver.getName());
 
     }
 }
