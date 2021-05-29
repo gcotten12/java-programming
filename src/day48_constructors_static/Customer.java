@@ -38,6 +38,6 @@ public class Customer {
     public String toString() {
         return "Customer information\n" +
                 "name: " + name + "\n" +
-                "id#: " + id;
+                "id#: " + id + "\n";
     }
 }
