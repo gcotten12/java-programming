@@ -23,6 +23,7 @@ public class CustomerObjects {
         customerArr.add(cs1);
         customerArr.add(cs2);
         customerArr.add(cs3);
+        customerArr.add(new Customer("Bill", 15));
         System.out.println(customerArr);
 
         System.out.println();
