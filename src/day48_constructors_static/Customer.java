@@ -4,11 +4,13 @@ public class Customer {
     private String name;
     private int id;
 
+    // constructor
     public Customer(String name, int id) {
         this.name = name;
         this.id = id;
     }
 
+    // getter and setter methods
     public String getName() {
         return name;
     }
@@ -25,6 +27,7 @@ public class Customer {
         this.id = id;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "Customer information\n" +
