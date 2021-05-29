@@ -5,9 +5,15 @@ public class Customer {
     private int id;
 
     // constructor
+    public Customer() {
+        System.out.println("No arg constructor");
+        name = "new customer";
+        id = -1;
+    }
+
     public Customer(String name, int id) {
-        this.name = name;
-        this.id = id;
+        this.name = name; // setname(name)
+        this.id = id; // setId(id)
     }
 
     // getter and setter methods
