@@ -10,6 +10,8 @@ public class CustomerObjects {
         cs1.setName("Bob");
         System.out.println(cs1);
 
+        Customer cs2 = new Customer("Mike",2);
+        System.out.println(cs2);
 
     }
 
