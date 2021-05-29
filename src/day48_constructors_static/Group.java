@@ -9,6 +9,7 @@ public class Group {
 
     public Group(String name) {
         this.name = name;
+        members = new ArrayList<>();
     }
 
     public void newMember(String newMember) {
