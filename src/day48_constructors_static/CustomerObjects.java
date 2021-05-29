@@ -33,6 +33,11 @@ public class CustomerObjects {
             System.out.println(todaysCustomer);
         }
 
+        //print all names of Customers in the list
+        for (Customer todaysCustomer : todaysCustomers) {
+            System.out.println(todaysCustomer.getName());
+        }
+
     }
 
 }
