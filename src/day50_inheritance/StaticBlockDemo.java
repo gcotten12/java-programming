@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StaticBlockDemo {
+
+    public static class Inner {
+        // variables and methods of inner static class
+    }
+
     static int num;
     static List<String> carModels;
     static {
@@ -14,6 +19,10 @@ public class StaticBlockDemo {
     public StaticBlockDemo() {
         System.out.println("Constructor method");
         num += 5;
+    }
+
+    { // initializer block -> runs each time object is created, before constructor
+        System.out.println("Initializer block");
     }
 
 }
