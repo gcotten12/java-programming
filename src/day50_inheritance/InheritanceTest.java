@@ -23,6 +23,15 @@ public class InheritanceTest {
         s1.school = "Cybertek";
         s1.study("Java");
 
+        EBook e1 = new EBook();
+            e1.title = "Smite";
+            e1.author = "Garrett Cotten";
+            e1.pages = 50;
+            e1.size = 120;
+            e1.price = 20.99;
+            e1.getEBook();
+
+
 
 
     }
