@@ -5,17 +5,21 @@ public class MobileAppObjects {
     public static void main(String[] args) {
 
         MobileApp newApp = new MobileApp();
-        newApp.name = "Twitch";
+        newApp.setName("Twitch");
         newApp.useTheApp(10);
+        newApp.setVersion(10.132);
+        newApp.download();
 
         Instagram instagram = new Instagram();
-        instagram.name = "Instagram";
+        instagram.setName("Instagram");
         instagram.useTheApp(20);
 
         Discord discordChat = new Discord();
-        discordChat.name = "Discord";
+        discordChat.setName("Discord");
         discordChat.useTheApp(15);
-
+        discordChat.setVersion(33.519);
+        discordChat.download();
+        discordChat.printInfo();
     }
 
 }
