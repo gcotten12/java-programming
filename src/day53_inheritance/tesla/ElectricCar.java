@@ -6,14 +6,15 @@ public class ElectricCar {
     private double price;
     private int year;
     private int range;
+    public static int count;
 
-    protected void drive(int miles) {
-        if(range == 0 || range - miles < 0) {
-            System.out.println("Error cannot drive that far, need to charge");
-        }else {
-            range -= miles;
-            System.out.println("Driving " +  miles + " miles ...");
-        }
+    public ElectricCar(String make, String model, double price, int year, int range) {
+        setMake(make);
+        this.model = model;
+        this.price = price;
+        this.year = year;
+        this.range = range;
+        count++;
     }
 
     @Override
@@ -23,7 +24,21 @@ public class ElectricCar {
                 ", model='" + model + '\'' +
                 ", price=" + price +
                 ", year=" + year +
+                ", range=" + range +
                 '}';
+    }
+
+    protected void drive(int miles) {
+        if (range == 0 || range - miles < 0) {
+            System.out.println("Error cannot drive that far, need to charge");
+        } else {
+            range -= miles;
+            System.out.println("Driving " + miles + " miles ...");
+        }
+    }
+
+    public static int getCount() {
+        return count;
     }
 
     public String getMake() {
@@ -31,7 +46,11 @@ public class ElectricCar {
     }
 
     public void setMake(String make) {
-        this.make = make;
+        if (make.isEmpty()) {
+            System.out.println("Error: make cannot be blank");
+        } else {
+            this.make = make;
+        }
     }
 
     public String getModel() {
