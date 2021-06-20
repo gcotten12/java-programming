@@ -7,10 +7,11 @@ public abstract class Student {
     public abstract void attendClass();
 }
 
+// this class is considered concrete class
 class OnlineStudent extends Student {
     @Override
     public void attendClass() {
-        System.out.println("Student will attend online");
+        System.out.println("Online student is attending the class using Zoom");
     }
 }
 
