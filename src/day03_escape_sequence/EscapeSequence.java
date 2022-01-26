@@ -9,5 +9,7 @@ public class EscapeSequence {
         System.out.println("\tHello");
         System.out.println("\t\tHello\nHow are you?");
 
+        System.out.println("I a trying to use air quotes like this: \" ex \" ");
+
     }
 }

@@ -7,5 +7,8 @@ public class AboutMe {
         double cost = 5.0;
         System.out.println("num= " + num);
         System.out.println("cost= " + cost);
+
+        System.out.println("Hello my name is Garrett Cotten and I am reviewing my Java skills so I can get a job");
+
     }
 }
